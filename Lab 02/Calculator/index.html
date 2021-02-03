@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
+    <div class="calculator">
+        <div><span id="error"></span></div>
+        <div class="result">
+            Result: <span id="res"></span>
+        </div>
+        <div class="inputs">
+            Num 1: <input id="num1" type="text" value=""/>
+            Num 2: <input id="num2" type="text" value=""/>
+
+            <p>For n numbers in case of addition and multiplication</p>
+            Comma Separated Values:&nbsp;<input id="nnum" type="text" value=""/>
+        </div>
+        <br/>
+        <div class="keys">
+            <button id="add">+</button>
+            <button id="sub">-</button>
+            <button id="mul">x</button>
+            <button id="div">/</button>
+            <button id="pow">Pow</button>
+            <button id="sqrt">Sqrt</button>
+        </div>
+    </div>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
