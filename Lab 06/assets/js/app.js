@@ -5,6 +5,7 @@ const prev = document.querySelector(".prev");
 const image = document.querySelector(".image");
 
 const container = document.querySelector(".slides");
+const row = document.querySelector('.row')
 
 let currentIndex = 0;
 
@@ -23,6 +24,12 @@ function addImage() {
     cloneImage.appendChild(img);
     container.appendChild(cloneImage);
     max = currentIndex;
+
+    imgBelow = document.createElement('img');
+    imgBelow.src = data;
+    imgBelow.setAttribute("id", currentIndex);
+    row.prepend(imgBelow)
+
   });
 }
 

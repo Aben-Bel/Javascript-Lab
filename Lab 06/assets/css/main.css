@@ -42,3 +42,22 @@ body{
 .container {
     margin-top: 20%;
 }
+
+.row{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width:100%;
+
+}
+
+.row > *{
+  width:100px;
+  height:100px
+}
