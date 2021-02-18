@@ -40,9 +40,9 @@ function hideall() {
 document.addEventListener("DOMContentLoaded", () => {
   addImage();
   next.addEventListener("click", (e) => {
-    if (max == currentIndex) {
+    if (max == currentIndex) { // if you are at max, load new image using addImage
       addImage();
-    } else {
+    } else { // if you are not at max, show the next hidden image;
       hideall();
       document.querySelector(`[index="${(currentIndex += 1)}"]`).style =
         "display:block";
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   prev.addEventListener("click", () => {
     length = document.querySelectorAll(".img");
     if (currentIndex == 1) {
+      // to avoid out of bounds
       hideall();
       currentIndex = max;
       document.querySelector(`[index="${currentIndex}"]`).style =
