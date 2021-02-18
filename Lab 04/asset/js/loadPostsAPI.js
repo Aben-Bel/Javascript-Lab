@@ -1,6 +1,7 @@
 // UI Vars 
 const postDiv3 = document.getElementById("thePosts");
 const load = document.querySelector("#spinner");
+const search = document.querySelector("#search");
 
 //Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
@@ -68,3 +69,16 @@ function loadDataNew() {
       postDiv3.innerHTML = output;
     }).catch();
 }
+
+
+search.addEventListener('keyup', ()=>{
+    console.log('here')
+    document.querySelectorAll("content").forEach(function (e) {
+        console.log('inside')
+        if (e.childNodes[0].textContent.includes(filter.value)) {
+        e.style.display = "block";
+        } else {
+        e.style.display = "none";
+        }
+    });
+})
