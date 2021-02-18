@@ -1,0 +1,44 @@
+[{
+    "name": "John 1",
+    "image": "https://via.placeholder.com/150",
+    "postTitle": "Post One",
+    "date": "January 21 ,2021",
+    "postText": "Lorem Ipsum ……..."
+},
+{
+    "name": "John 2",
+    "image": "https://via.placeholder.com/150",
+    "postTitle": "Post Two",
+    "date": "January 21 ,2021",
+    "postText": "Lorem Ipsum ……..."
+},
+{
+  "name": "John 2",
+  "image": "https://via.placeholder.com/150",
+  "postTitle": "Post Three",
+  "date": "January 21 ,2021",
+  "postText": "Lorem Ipsum ……..."
+},
+{
+  "name": "John 2",
+  "image": "https://via.placeholder.com/150",
+  "postTitle": "Post Four",
+  "date": "January 21 ,2021",
+  "postText": "Lorem Ipsum ……..."
+},
+{
+  "name": "John 2",
+  "image": "https://via.placeholder.com/150",
+  "postTitle": "Post Five",
+  "date": "January 21 ,2021",
+  "postText": "Lorem Ipsum ……..."
+},
+{
+  "name": "John 2",
+  "image": "https://via.placeholder.com/150",
+  "postTitle": "Post Six",
+  "date": "January 21 ,2021",
+  "postText": "Lorem Ipsum ……..."
+}
+
+]

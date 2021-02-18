@@ -138,7 +138,7 @@ function sortDisplay(e){
     
     let objectStore = DB.transaction('tasks').objectStore('tasks');
     console.log(e.target);
-   
+        // sorting by date when getting data "index('date').openCursor(null, next)"
         objectStore.index('date').openCursor(null, 'next').onsuccess = function(e) {
             // assign the current cursor
             let cursor = e.target.result;
@@ -152,12 +152,15 @@ function sortDisplay(e){
                 const link = document.createElement('a');
                 // Add class and the x marker for a 
                 link.className = 'delete-item secondary-content';
+                // edit button
                 link.innerHTML = `
                  <i class="fa fa-remove"></i>
                 &nbsp;<a href="./edit.html?id=${cursor.value.id}"><i class="fa fa-edit"></i> </a>
                 `;
                 li.appendChild(link);
                 li.appendChild(document.createTextNode(cursor.value.taskname));
+                
+                // appending sorted by date list from bottom or from top. 
                 if(e.target.value == "Ascendning"){
                     taskList.appendChild(li);
                 }else{

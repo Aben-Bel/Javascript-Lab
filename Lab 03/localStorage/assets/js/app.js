@@ -94,6 +94,13 @@ function filterTasks(e) {
     
     
     */
+   document.querySelectorAll(".collection-item").forEach(function(e){
+        if(e.childNodes[0].textContent.includes(filter.value)){
+            e.style.display = "block";
+        }else{
+            e.style.display = "none";
+        }
+    });
 
 }
 
